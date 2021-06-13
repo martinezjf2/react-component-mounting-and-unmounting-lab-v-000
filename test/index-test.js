@@ -1,3 +1,4 @@
+import raf from '../src/components/tempPolyfills'
 import React from 'react';
 import ReactDOM from 'react-dom';
 import sinon from 'sinon';
@@ -6,6 +7,8 @@ import Enzyme, { shallow, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import Game from '../src/components/Game';
 import Pancake from '../src/components/Pancake';
+
+
 
 Enzyme.configure({ adapter: new Adapter() })
 
